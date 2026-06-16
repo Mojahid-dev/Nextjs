@@ -18,8 +18,8 @@ export default function LoginPage() {
         <CardHeader>
           <CardTitle>
             Login to Your{" "}
-            <Link href="/">
-              <span className="text-olive-700 font-bold">MO</span>BLOG
+            <Link href="/" className="text-gray-600">
+              <span className="text-slate-800 font-bold">MO</span>BLOG
             </Link>{" "}
             Account
           </CardTitle>

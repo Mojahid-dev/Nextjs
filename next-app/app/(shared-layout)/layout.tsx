@@ -1,11 +1,10 @@
 import Navbar from "@/components/web/Navbar";
-import { ReactNode } from "react";
 
-export default function SharedLayout({ children }: { children: ReactNode }) {
-  return(
-    <>
-      {/* <Navbar /> */}
+export default function SharedLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="p-2">
+      <Navbar />
       {children}
-    </>
+    </div>
   );
 }
