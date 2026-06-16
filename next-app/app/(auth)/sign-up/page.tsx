@@ -16,7 +16,6 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
@@ -75,7 +74,7 @@ export default function SignUpPage() {
                 control={form.control}
                 render={({ field, fieldState }) => (
                   <Field>
-                    <FieldLabel>Enter Your Email</FieldLabel>
+                    <FieldLabel>Email</FieldLabel>
                     <Input 
                       aria-invalid={fieldState.invalid}
                       placeholder="johndoe@gmail.com"
@@ -94,7 +93,7 @@ export default function SignUpPage() {
                 control={form.control}
                 render={({ field, fieldState }) => (
                   <Field>
-                    <FieldLabel>Enter Your password</FieldLabel>
+                    <FieldLabel>Password</FieldLabel>
                     <Input aria-invalid={fieldState.invalid} placeholder="*******" type="password" {...field} />
                     {fieldState.invalid && (
                       <FieldError errors={[fieldState.error]} />
